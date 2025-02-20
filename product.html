@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label Hover</title>
+    <style>
+        .container2 {
+            position: relative;
+            width: 300px;
+        }
+
+        .produto {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .label2 {
+            position: absolute;
+    top: 10px;
+    left: -1px;
+    background: #39e322;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: width 0.3s ease-in-out;
+        width: 25%;
+    text-align: center;
+        }
+
+        .descricao {
+            display: none;
+            background: #fff;
+    color: #333;
+    padding: 19px 15px;
+    font-size: 12px;
+    border-radius: 2px;
+    margin-top: 34px;
+    width: 59%;
+    position: absolute;
+    text-align: justify;
+}
+
+
+        .label2:hover + .descricao {
+            display: block;
+        }
+        .container2:hover .label2 {
+    width: 62%; /* Defina a nova largura desejada */
+}
+.color {
+color: #39e322;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container2">
+        <div class="label2">Novo</div>
+        <div class="descricao">Produtos em <span class='color'> excelente estado</span>, sem defeitos ou riscos aparentes, com todas as peças completas. Alguns podem vir sem embalagem original, mas sua funcionalidade e qualidade estão asseguradas."</div>
+    </div>
+
+</body>
+</html>
+
+</html>
+  
